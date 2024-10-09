@@ -1,13 +1,3 @@
-# FROM ubuntu:latest AS build
-# RUN apt-get update
-# RUN apt-get install openjdk-21-jdk -y
-# COPY . .
-# RUN ./mvnw bootJar --no-daemon
-
-# FROM openjdk:21-jdk-slim
-# EXPOSE 8000
-# COPY --from-build /build/libs/spring-security-1.jar app.jar
-
 # Stage 1: Build stage
 FROM ubuntu:latest AS build
 
