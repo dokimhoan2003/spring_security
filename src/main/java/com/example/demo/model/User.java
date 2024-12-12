@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table(name = "user", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name = "app_user", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class User {
 	@Id
 	@GeneratedValue(strategy =  GenerationType.IDENTITY)
