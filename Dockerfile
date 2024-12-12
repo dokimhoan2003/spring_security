@@ -11,18 +11,3 @@ ENTRYPOINT ["java","-jar","spring-security-1.jar"]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-COPY target/spring-security-1.jar spring-security-1.jar
-ENTRYPOINT ["java","-jar","/spring-security-1.jar"]
-
-
